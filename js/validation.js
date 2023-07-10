@@ -156,3 +156,8 @@ nevInput.addEventListener("input", () => {
 kartyaInput.addEventListener("input", () => {
     validateInput("kartya");
 });
+
+function kartyaszam() {
+    kartyaInput.value = kartyaInput.value.replaceAll('-', '');
+    kartyaInput.value = kartyaInput.value.replaceAll(' ', '');
+};
