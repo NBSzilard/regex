@@ -84,7 +84,7 @@ function validateInput(_targetInput) {
             formState.toggleSubmitBtn();
             break;
         case "nev":
-            const nevRegex = /^[a-zA-ZöüóőúéáűíÖÜÓŐÚÉÁŰÍ]{3,15} [a-zA-ZöüóőúéáűíÖÜÓŐÚÉÁŰÍ]{3,15}$/;
+            const nevRegex = /^[a-zA-ZöüóőúéáűíÖÜÓŐÚÉÁŰÍ-]{3,15} [a-zA-ZöüóőúéáűíÖÜÓŐÚÉÁŰÍ]{3,15}$/;
             result = nevRegex.test(nevInput.value);
             
             if (result === false) {
